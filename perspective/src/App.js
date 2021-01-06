@@ -4,8 +4,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Welcome to Perspective
+        <p className="openingTitle">
+          Perspective
+        </p>
+        <p className="openingLine">
+        See what influenced the perspectives and voting patterns of politicians
         </p>
       </header>
     </div>
