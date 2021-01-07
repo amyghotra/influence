@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Quicksand:wght@300&display=swap');
+
+.App-header {
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+  animation-duration: 2.5s; 
+  
+  min-height: 100vh;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  color: black;
+}
+
+.openingTitle {
+  animation: 2s slide-up;
+  margin-top: 0%;
+
+  font-size:5vw;
+  font-family: 'Lora', serif;
+}
+
+.openingLine {
+  animation: 2s slide-up2;
+  margin-top: -20px;
+  
+  font-size:2vw;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.openingLogo{
+  animation: 2s slide-up;
+  margin-top: 0%;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes slide-up {
+  from {
+    margin-top: 100%;
+    height: 100%; 
+  }
+
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
+@keyframes slide-up2 {
+  from {
+    margin-top: 100%;
+    height: 100%; 
+  }
+
+  to {
+    margin-top: -20px;
+    height: 100%;
+  }
+}

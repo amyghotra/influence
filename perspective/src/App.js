@@ -1,16 +1,19 @@
 import './App.css';
+import Opening from './Opening'
+import Options from './Options'
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p className="openingTitle">
-          Perspective
-        </p>
-        <p className="openingLine">
-        See what influenced the perspectives and voting patterns of politicians
-        </p>
-      </header>
+      <Opening />
+      {/* <BrowserRouter>
+       <Switch>
+        <Route exact path="/" component={Opening} />
+        <Route path="/options" component={Options} />
+      </Switch>
+      </BrowserRouter> */}
     </div>
   );
 }
